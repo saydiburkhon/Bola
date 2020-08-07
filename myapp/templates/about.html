@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content  %}
+
+    <div class="ftco-blocks-cover-1">
+       <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url({% static 'myapp/images/kid3.jpg' %})">
+        <div class="container">
+          <div class="row align-items-center ">
+
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="text-cursive h5 text-red">Bizning veb-saytimizga xush kelibsiz</span>
+              <h1 class="mb-3 font-weight-bold text-teal">Biz haqimizda</h1>
+              <p><a href="index.html" class="text-white"></a> <span class="mx-3"></span> <strong></strong></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'myapp/images/img_1.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="text-cursive h5 text-red">Biz haqimizda</span>
+            <h1 class="text-black">Farzandlaringizni ta'limga undang</h1>
+            <p><span> <h3>Bizning onlayn bolalar bog'chasi platformasi bolalarga bilimlarni eng qiziqarli usulda olishga imkon beradi.</h3></span><span><h3> Biz 4 yoshdan 11 yoshgacha bo'lgan bolalar bilan ishlaymiz. Bizning tajribali va professional o'qituvchilarimiz har doim sizning bolalaringiz eng samarali o'qishini ta'minlashadi.</h3></span></p>
+
+            <p class="mt-5"><a href="{% url 'contact'  %}" class="btn btn-warning py-4 btn-custom-1">Biz bilan bog'laning</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-teal">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5 section-2-title">
+          <div class="col-md-6">
+            <span class="text-cursive h5 text-red">Jamoa</span>
+            <h3 class="text-white text-center">Jamoa bilan tanishing</h3>
+
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="post-entry-1 h-100 person-1 green">
+
+                <img src="{% static 'myapp/images/hitler1.jpg' %}" alt="Image"
+                 class="img-fluid">
+
+              <div class="post-entry-1-contents">
+                <span class="meta">Proyekt Menedjer</span>
+                <h2>Abdulboriy Alimov</h2>
+                <p>Bolalar ta'limi bizning ustuvor vazifamiz bo'lishi kerak</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="post-entry-1 h-100 person-1 yellow">
+
+                <img src="{% static 'myapp/images/said1.jpg' %}" alt="Image"
+                 class="img-fluid">
+
+              <div class="post-entry-1-contents">
+                <span class="meta">Loyiha Asoschisi</span>
+                <h2>Saydiburkhon Saydirasulov</h2>
+                <p>Ta'lim bu biz topishga harakat qilishimiz kerak bo'lgan boylikdir</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="post-entry-1 h-100 person-1 red">
+
+                <img src="{% static 'myapp/images/gov.jpg' %}" alt="Image"
+                 class="img-fluid">
+
+              <div class="post-entry-1-contents">
+                <span class="meta">Homiy</span>
+                <h2>Abdumannonivich Dilshodbek</h2>
+                <p style="margin-bottom:14%;">O'zbekiston mahalla vazirligi fondi raisi.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+{% endblock  %}

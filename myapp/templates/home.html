@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+    <div class="ftco-blocks-cover-1">
+
+      <div class="site-section-cover overlay">
+        <div class="container">
+          <div class="row align-items-center ">
+            <div class="col-md-5 mt-5 pt-5">
+
+              <h2 class="mb-3 font-weight-bold text-teal" style='margin-top:60px; color:white;'>Farzandlaringizni ta'limga undang</h2>
+              <p>Farzandlaringiz uchun ajoyib onlayn ta'lim platformasi</p>
+              <p class="mt-5"><a href="{% url 'contact' %}" class="btn btn-primary py-4 btn-custom-1">Ko'proq ma'lumot olish</a></p>
+            </div>
+            <div class="col-md-6 ml-auto align-self-end" style='position:relative; margin-bottom: -30%; ' >
+              <img src="{% static 'myapp/images/uzb.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 ml-auto align-self-end" style='position:relative; margin-right:45%; margin-top:-15%; '>
+              <img src="{% static 'myapp/images/unnamed.png' %}" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <img src="{% static 'myapp/images/cube.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="text-cursive h5 text-red">Biz haqimizda</span>
+            <img src="{% static 'myapp/images/12.png' %}" alt="Image" class="img-fluid">
+            <h1 class="text-black">Farzandlaringizni ta'limga undang</h1>
+            <p><span>Bizning maqsadimiz 21-asrning bilimlari, ijodkorligi va o'rganish ko'nikmalariga ega bo'lgan mustaqil o'quvchilarni o'zgaruvchan dunyoda ilg'or bo'lishdir.</span><span>Bolalarning o'qishga bo'lgan munosabati ota-onalar, bolalar va o'qituvchilar o'quv jarayonida sherik sifatida ko'riladigan qo'llab-quvvatlovchi muhit va hamjamiyatni yaratishni o'z ichiga oladi.</span></p>
+
+            <p class="mt-5"><a href="{% url 'about' %}" class="btn btn-warning py-4 btn-custom-1">Biz haqimizda ko'proq ma'lumot</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-info">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block">Kurslar</span>
+            <h2 class="text-white">Bizning kurslar</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/006-research.svg' %}" alt="Image" class="img-fluid"></span>
+              <h3 class="text-teal">Til o'rganish</h3>
+              <p>Biz bolalarga ingliz tilini eng qiziqarli tarzda o'rgatamiz va ularga ingliz tilida ravon gapirishlariga yordam beramiz</p>
+              <p><a href="{% url 'contact' %}" class="btn btn-primary btn-custom-1 mt-4">Batafsil ma'lumot</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/healthy.svg' %}" alt="Image" class="img-fluid"></span>
+              <h3 class="text-success">Jismoniy tarbiya</h3>
+              <p>Sog'lom tana bolalarga narsalarni yaxshiroq o'rganishga va kun davomida yanada samarali bo'lishga yordam beradi</p>
+              <p><a href="{% url 'contact' %}" class="btn btn-warning btn-custom-1 mt-4">Batafsil ma'lumot</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/design.svg' %}" alt="Image" class="img-fluid"></span>
+              <h3 class="text-danger">San'at</h3>
+              <p>San'atni o'rganish bolalarga dunyoqarashini kengaytirishga va hayotda yanada ma'naviy bo'lishga yordam beradi. </p>
+              <p><a href="{% url 'contact' %}" class="btn btn-success btn-custom-1 mt-4">Batafsil ma'lumot</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div style='text-align:center; margin-top:3%;'>
+      <h1> Bu qanday ishlaydi ?</h1>
+    </div>
+
+    <div class="site-section" style='color:white;'>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="block-2 red">
+              <span class="wrap-icon">
+                <span><h3>1</h3></span>
+              </span>
+
+
+              <h2 style='position:relative; margin-bottom:10%;'>Birinchi bepul mashg'ulot</h2>
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/meeting.svg' %}" alt="Image" class="img-fluid"></span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="block-2 yellow">
+              <span class="wrap-icon">
+                <span><h3>2</h3></span>
+              </span>
+              <h2 style='position:relative; margin-bottom:10%;'>To'lov</h2>
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/credit-card.svg' %}" alt="Image" class="img-fluid"></span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="block-2 teal">
+              <span class="wrap-icon">
+                <span><h3>3</h3></span>
+              </span>
+              <h2 style='position:relative; margin-bottom:10%;'>Mashg'ulotlarni davom ettiring</h2>
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/online-class.svg' %}" alt="Image" class="img-fluid"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="text-cursive h5 text-red d-block">Narxlar rejasi</span>
+            <h2 class="text-black">Narxlar</h2>
+            <p>To'lovdan keyin siz qo'shimcha imtiyozlarga ega bo'lasiz, masalan, dam olish kunlarida ikki haftada bir marta bepul darslar .Siz bitimning qonuniyligiga ishonch hosil qilishingiz mumkin.</p>
+          </div>
+          <div class="col-md-4">
+            <div >
+              <span>
+
+              </span>
+              <h3>Guruh kurslari</h3>
+              <ul class="ul-check list-unstyled teal">
+                <li><h3>100 000 UZS</h3></li>
+                <li>bitta darsning davomiyligi: 1 soat</li>
+                <li>Bitta guruhdagi bolalar soni: 10</li>
+                <li>Haftada 3 ta dars, bir oyda 12 ta dars</li>
+
+              </ul>
+              <p><a href="{% url 'contact' %}" class="btn btn-teal btn-custom-1 mt-4">Xarid qilmoq</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div >
+              <span >
+
+              </span>
+              <h3>Individual kurslar</h3>
+              <ul class="ul-check list-unstyled danger">
+                <li><h3>300 000 UZS</h3></li>
+                <li>bitta darsning davomiyligi: 1 soat</li>
+                <li>individual yondashuv va tezroq rivojlanish</li>
+                <li>Haftada 3 ta dars, bir oyda 12 ta dars</li>
+              </ul>
+              <p><a href="{% url 'contact' %}" class="btn btn-danger btn-custom-1 mt-4">Xarid qilmoq</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-md-8">
+
+
+            <div class="row" style='margin-bottom:15%;'>
+              <div class="col-lg-3 text-center">
+                <span class="text-teal h2 d-block">1200</span>
+                <span>Xursand bo'lgan mijozlar</span>
+              </div>
+              <div class="col-lg-3 text-center">
+                <span class="text-yellow h2 d-block">1345</span>
+                <span>A'zolar</span>
+              </div>
+              <div class="col-lg-3 text-center">
+                <span class="text-success h2 d-block">20+</span>
+                <span>Xodimlar</span>
+              </div>
+              <div class="col-lg-3 text-center">
+                <span class="text-danger h2 d-block">2000+</span>
+                <span>Bizning obunachilarimiz</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section py-5 bg-warning" >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 d-flex" >
+          <h2 class="text-white m-0">Farzandlaringizni ta'limga undang</h2>
+
+          <a href="{% url 'contact' %}" class="btn btn-primary btn-custom-1 py-3 px-5 ml-auto">Boshlash</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  {% endblock %}

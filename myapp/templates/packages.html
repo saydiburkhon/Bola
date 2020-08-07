@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="ftco-blocks-cover-1">
+       <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url({% static 'myapp/images/kid4.jpg' %})">
+        <div class="container">
+          <div class="row align-items-center ">
+
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="text-cursive h5 text-red">Bizning veb-saytimizga xush kelibsiz</span>
+              <h1 class="mb-3 font-weight-bold text-teal">Kurslar</h1>
+              <p><a href="index.html" class="text-white"></a> <span class="mx-3"></span> <strong></strong></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section bg-info">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block">Kurslar</span>
+            <h2 class="text-white">Bizning kurslar</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/006-research.svg' %}" alt="Image" class="img-fluid"></span>
+              <h3 class="text-teal">Til o'rganish</h3>
+              <p>Biz bolalarga ingliz tilini eng qiziqarli tarzda o'rgatamiz va ularga ingliz tilida ravon gapirishlariga yordam beramiz</p>
+              <p><a href="{% url 'contact' %}" class="btn btn-primary btn-custom-1 mt-4">Batafsil ma'lumot</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/healthy.svg' %}" alt="Image" class="img-fluid"></span>
+              <h3 class="text-success">Jismoniy tarbiya</h3>
+              <p>Sog'lom tana bolalarga narsalarni yaxshiroq o'rganishga va kun davomida yanada samarali bo'lishga yordam beradi</p>
+              <p><a href="{% url 'contact' %}" class="btn btn-warning btn-custom-1 mt-4">Batafsil ma'lumot</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="{% static  'myapp/images/flaticon/svg/design.svg' %}" alt="Image" class="img-fluid"></span>
+              <h3 class="text-danger">San'at</h3>
+              <p>San'atni o'rganish bolalarga dunyoqarashini kengaytirishga va hayotda yanada ma'naviy bo'lishga yordam beradi.</p>
+              <p><a href="{% url 'contact' %}" class="btn btn-success btn-custom-1 mt-4">Batafsil ma'lumot</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section py-5 bg-warning">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 d-flex">
+          <h2 class="text-white m-0">Farzandingizni ta'limga undang</h2>
+          <a href="{% url 'contact' %}" class="btn btn-primary btn-custom-1 py-3 px-5 ml-auto">Boshlash</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  {% endblock %}
