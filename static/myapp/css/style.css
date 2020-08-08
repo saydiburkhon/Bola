@@ -276,7 +276,8 @@ h1, h2, h3, h4, h5,
 .btn-custom-1 {
   border-radius: 30px;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 0; }
+  border-bottom-left-radius: 0;
+   }
 
 .line-height-1 {
   line-height: 1 !important; }
